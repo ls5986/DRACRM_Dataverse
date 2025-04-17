@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name LocalizedName="Debt Account" OriginalName="Debt Account">cr2a0_debtaccount</Name>
+  <EntityInfo>
+    <entity Name="cr2a0_debtaccount">
+      <LocalizedNames>
+        <LocalizedName description="Debt Account" languagecode="1033" />
+      </LocalizedNames>
+      <LocalizedCollectionNames>
+        <LocalizedCollectionName description="Debt Accounts" languagecode="1033" />
+      </LocalizedCollectionNames>
+      <Descriptions>
+        <Description description="Records of debt accounts and their balances" languagecode="1033" />
+      </Descriptions>
+      <PrimaryNameAttribute>cr2a0_name</PrimaryNameAttribute>
+      <attributes>
+        <attribute PhysicalName="cr2a0_debtaccountid">
+          <Type>primarykey</Type>
+          <Name>cr2a0_debtaccountid</Name>
+          <LogicalName>cr2a0_debtaccountid</LogicalName>
+          <RequiredLevel>SystemRequired</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsPrimaryId>1</IsPrimaryId>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Debt Account ID" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Unique identifier for entity instances" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_name">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_name</Name>
+          <LogicalName>cr2a0_name</LogicalName>
+          <RequiredLevel>ApplicationRequired</RequiredLevel>
+          <MaxLength>100</MaxLength>
+          <Format>text</Format>
+          <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsPrimaryName>1</IsPrimaryName>
+          <LocalizedNames>
+            <LocalizedName description="Name" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Name of the debt account" languagecode="1033" />
+          </Descriptions>
+          <displaynames>
+            <displayname description="Name" languagecode="1033" />
+          </displaynames>
+        </attribute>
+        <attribute PhysicalName="cr2a0_creditorname">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_creditorname</Name>
+          <LogicalName>cr2a0_creditorname</LogicalName>
+          <RequiredLevel>ApplicationRequired</RequiredLevel>
+          <MaxLength>100</MaxLength>
+          <Format>text</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Creditor Name" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Name of the creditor" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_accountnumber">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_accountnumber</Name>
+          <LogicalName>cr2a0_accountnumber</LogicalName>
+          <RequiredLevel>ApplicationRequired</RequiredLevel>
+          <MaxLength>50</MaxLength>
+          <Format>text</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Account Number" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Account number of the debt" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_balance">
+          <Type>money</Type>
+          <Name>cr2a0_balance</Name>
+          <LogicalName>cr2a0_balance</LogicalName>
+          <RequiredLevel>ApplicationRequired</RequiredLevel>
+          <Precision>19</Precision>
+          <Scale>4</Scale>
+          <MinValue>-999999999999999.99</MinValue>
+          <MaxValue>999999999999999.99</MaxValue>
+          <Format>currency</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Balance" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Current balance of the debt account" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_interestrate">
+          <Type>decimal</Type>
+          <Name>cr2a0_interestrate</Name>
+          <LogicalName>cr2a0_interestrate</LogicalName>
+          <RequiredLevel>None</RequiredLevel>
+          <Precision>5</Precision>
+          <Scale>2</Scale>
+          <MinValue>0</MinValue>
+          <MaxValue>100</MaxValue>
+          <Format>percentage</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Interest Rate" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Interest rate on the debt account" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_minimumpayment">
+          <Type>money</Type>
+          <Name>cr2a0_minimumpayment</Name>
+          <LogicalName>cr2a0_minimumpayment</LogicalName>
+          <RequiredLevel>None</RequiredLevel>
+          <Precision>19</Precision>
+          <Scale>4</Scale>
+          <MinValue>0</MinValue>
+          <MaxValue>999999999999999.99</MaxValue>
+          <Format>currency</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Minimum Payment" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Minimum payment required for the debt account" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_paymentduedate">
+          <Type>datetime</Type>
+          <Name>cr2a0_paymentduedate</Name>
+          <LogicalName>cr2a0_paymentduedate</LogicalName>
+          <RequiredLevel>None</RequiredLevel>
+          <Format>dateonly</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Payment Due Date" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Date when the next payment is due" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_lastpaymentdate">
+          <Type>datetime</Type>
+          <Name>cr2a0_lastpaymentdate</Name>
+          <LogicalName>cr2a0_lastpaymentdate</LogicalName>
+          <RequiredLevel>None</RequiredLevel>
+          <Format>dateonly</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Last Payment Date" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Date of the last payment made" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_lastpaymentamount">
+          <Type>money</Type>
+          <Name>cr2a0_lastpaymentamount</Name>
+          <LogicalName>cr2a0_lastpaymentamount</LogicalName>
+          <RequiredLevel>None</RequiredLevel>
+          <Precision>19</Precision>
+          <Scale>4</Scale>
+          <MinValue>0</MinValue>
+          <MaxValue>999999999999999.99</MaxValue>
+          <Format>currency</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Last Payment Amount" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Amount of the last payment made" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_status">
+          <Type>optionset</Type>
+          <Name>cr2a0_status</Name>
+          <LogicalName>cr2a0_status</LogicalName>
+          <RequiredLevel>ApplicationRequired</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Status" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Current status of the debt account" languagecode="1033" />
+          </Descriptions>
+          <OptionSet>
+            <OptionSetInfo>
+              <Name>cr2a0_status</Name>
+              <IsGlobal>0</IsGlobal>
+              <IsCustomizable>1</IsCustomizable>
+              <IsManaged>1</IsManaged>
+              <OptionSetType>Picklist</OptionSetType>
+              <Options>
+                <Option>
+                  <Value>1</Value>
+                  <Label>
+                    <LocalizedLabels>
+                      <LocalizedLabel description="Active" languagecode="1033" />
+                    </LocalizedLabels>
+                  </Label>
+                </Option>
+                <Option>
+                  <Value>2</Value>
+                  <Label>
+                    <LocalizedLabels>
+                      <LocalizedLabel description="In Default" languagecode="1033" />
+                    </LocalizedLabels>
+                  </Label>
+                </Option>
+                <Option>
+                  <Value>3</Value>
+                  <Label>
+                    <LocalizedLabels>
+                      <LocalizedLabel description="In Collection" languagecode="1033" />
+                    </LocalizedLabels>
+                  </Label>
+                </Option>
+                <Option>
+                  <Value>4</Value>
+                  <Label>
+                    <LocalizedLabels>
+                      <LocalizedLabel description="Paid Off" languagecode="1033" />
+                    </LocalizedLabels>
+                  </Label>
+                </Option>
+                <Option>
+                  <Value>5</Value>
+                  <Label>
+                    <LocalizedLabels>
+                      <LocalizedLabel description="Settled" languagecode="1033" />
+                    </LocalizedLabels>
+                  </Label>
+                </Option>
+              </Options>
+            </OptionSetInfo>
+          </OptionSet>
+        </attribute>
+        <attribute PhysicalName="cr2a0_clientid">
+          <Type>lookup</Type>
+          <Name>cr2a0_clientid</Name>
+          <LogicalName>cr2a0_clientid</LogicalName>
+          <RequiredLevel>ApplicationRequired</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Client" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="The client who owns this debt account" languagecode="1033" />
+          </Descriptions>
+          <Targets>
+            <Target>cr2a0_client</Target>
+          </Targets>
+        </attribute>
+      </attributes>
+      <EntitySetName>cr2a0_debtaccounts</EntitySetName>
+      <IsDuplicateCheckEnabled>0</IsDuplicateCheckEnabled>
+      <IsOfflineInMobileClient>1</IsOfflineInMobileClient>
+      <IsValidForQueue>0</IsValidForQueue>
+      <OwnershipType>UserOwned</OwnershipType>
+      <IsAvailableOffline>1</IsAvailableOffline>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <IsVisibleInMobile>1</IsVisibleInMobile>
+      <IsVisibleInMobileClient>1</IsVisibleInMobileClient>
+      <IsReadOnlyInMobileClient>0</IsReadOnlyInMobileClient>
+      <IsQuickCreateEnabled>1</IsQuickCreateEnabled>
+      <SchemaName>cr2a0_debtaccount</SchemaName>
+      <IsActivity>0</IsActivity>
+      <IsActivityParty>0</IsActivityParty>
+      <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>
+      <IsConnectionsEnabled>0</IsConnectionsEnabled>
+      <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
+      <IsKnowledgeManagementEnabled>0</IsKnowledgeManagementEnabled>
+      <IsMailMergeEnabled>0</IsMailMergeEnabled>
+      <IsMappable>1</IsMappable>
+      <IsReadingPaneEnabled>0</IsReadingPaneEnabled>
+      <IsRequiredOffline>0</IsRequiredOffline>
+      <IsSLAEnabled>0</IsSLAEnabled>
+      <IsStateModelEnabled>0</IsStateModelEnabled>
+      <IsWorkflowEnabled>1</IsWorkflowEnabled>
+    </entity>
+  </EntityInfo>
+</Entity> 

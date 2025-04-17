@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.1.0.643" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>ClientSolution</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Client Solution" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>CR2A0</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="CR2A0" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <CustomizationPrefix>cr2a0</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>10000</CustomizationOptionValuePrefix>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="cr2a0_client" behavior="0" />
+    </RootComponents>
+    <MissingDependencies />
+  </SolutionManifest>
+</ImportExportXml> 

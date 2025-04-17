@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name LocalizedName="Client" OriginalName="Client">cr2a0_client</Name>
+  <EntityInfo>
+    <entity Name="cr2a0_client">
+      <LocalizedNames>
+        <LocalizedName description="Client" languagecode="1033" />
+      </LocalizedNames>
+      <LocalizedCollectionNames>
+        <LocalizedCollectionName description="Clients" languagecode="1033" />
+      </LocalizedCollectionNames>
+      <Descriptions>
+        <Description description="Records of clients and their information" languagecode="1033" />
+      </Descriptions>
+      <PrimaryNameAttribute>cr2a0_firstname</PrimaryNameAttribute>
+      <attributes>
+        <attribute PhysicalName="cr2a0_clientid">
+          <Type>primarykey</Type>
+          <Name>cr2a0_clientid</Name>
+          <LogicalName>cr2a0_clientid</LogicalName>
+          <RequiredLevel>SystemRequired</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsPrimaryId>1</IsPrimaryId>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Client ID" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Unique identifier for entity instances" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_firstname">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_firstname</Name>
+          <LogicalName>cr2a0_firstname</LogicalName>
+          <RequiredLevel>ApplicationRequired</RequiredLevel>
+          <MaxLength>100</MaxLength>
+          <Format>text</Format>
+          <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsPrimaryName>1</IsPrimaryName>
+          <LocalizedNames>
+            <LocalizedName description="First Name" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="The first name of the client" languagecode="1033" />
+          </Descriptions>
+          <displaynames>
+            <displayname description="First Name" languagecode="1033" />
+          </displaynames>
+        </attribute>
+      </attributes>
+      <EntitySetName>cr2a0_clients</EntitySetName>
+      <IsDuplicateCheckEnabled>0</IsDuplicateCheckEnabled>
+      <IsOfflineInMobileClient>1</IsOfflineInMobileClient>
+      <IsValidForQueue>0</IsValidForQueue>
+      <OwnershipType>UserOwned</OwnershipType>
+      <IsAvailableOffline>1</IsAvailableOffline>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <IsVisibleInMobile>1</IsVisibleInMobile>
+      <IsVisibleInMobileClient>1</IsVisibleInMobileClient>
+      <IsReadOnlyInMobileClient>0</IsReadOnlyInMobileClient>
+      <IsQuickCreateEnabled>1</IsQuickCreateEnabled>
+      <SchemaName>cr2a0_client</SchemaName>
+    </entity>
+  </EntityInfo>
+</Entity> 

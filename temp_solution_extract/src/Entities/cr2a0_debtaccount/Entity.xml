@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name LocalizedName="Debt Account" OriginalName="Debt Account">cr2a0_debtaccount</Name>
+  <EntityInfo>
+    <entity Name="cr2a0_debtaccount">
+      <LocalizedNames>
+        <LocalizedName description="Debt Account" languagecode="1033" />
+      </LocalizedNames>
+      <LocalizedCollectionNames>
+        <LocalizedCollectionName description="Debt Accounts" languagecode="1033" />
+      </LocalizedCollectionNames>
+      <Descriptions>
+        <Description description="Records of debt accounts associated with clients" languagecode="1033" />
+      </Descriptions>
+      <PrimaryNameAttribute>cr2a0_creditorname</PrimaryNameAttribute>
+      <attributes>
+        <attribute PhysicalName="cr2a0_debtaccountid">
+          <Type>primarykey</Type>
+          <Name>cr2a0_debtaccountid</Name>
+          <LogicalName>cr2a0_debtaccountid</LogicalName>
+          <RequiredLevel>SystemRequired</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsPrimaryId>1</IsPrimaryId>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Debt Account ID" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Unique identifier for entity instances" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_creditorname">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_creditorname</Name>
+          <LogicalName>cr2a0_creditorname</LogicalName>
+          <RequiredLevel>ApplicationRequired</RequiredLevel>
+          <MaxLength>100</MaxLength>
+          <Format>text</Format>
+          <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsPrimaryName>1</IsPrimaryName>
+          <LocalizedNames>
+            <LocalizedName description="Creditor Name" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Name of the creditor for this debt account" languagecode="1033" />
+          </Descriptions>
+          <displaynames>
+            <displayname description="Creditor Name" languagecode="1033" />
+          </displaynames>
+        </attribute>
+        <attribute PhysicalName="cr2a0_accountnumber">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_accountnumber</Name>
+          <LogicalName>cr2a0_accountnumber</LogicalName>
+          <RequiredLevel>ApplicationRequired</RequiredLevel>
+          <MaxLength>100</MaxLength>
+          <Format>text</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSearchable>1</IsSearchable>
+          <IsFilterable>1</IsFilterable>
+          <LocalizedNames>
+            <LocalizedName description="Account Number" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Account number for the debt account" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_balance">
+          <Type>money</Type>
+          <Name>cr2a0_balance</Name>
+          <LogicalName>cr2a0_balance</LogicalName>
+          <RequiredLevel>ApplicationRequired</RequiredLevel>
+          <MinValue>0</MinValue>
+          <MaxValue>1000000000</MaxValue>
+          <Precision>2</Precision>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Balance" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Current balance of the debt account" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+      </attributes>
+      <EntitySetName>cr2a0_debtaccounts</EntitySetName>
+      <IsDuplicateCheckEnabled>0</IsDuplicateCheckEnabled>
+      <IsOfflineInMobileClient>1</IsOfflineInMobileClient>
+      <IsValidForQueue>0</IsValidForQueue>
+      <OwnershipType>UserOwned</OwnershipType>
+      <IsAvailableOffline>1</IsAvailableOffline>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <IsVisibleInMobile>1</IsVisibleInMobile>
+      <IsVisibleInMobileClient>1</IsVisibleInMobileClient>
+      <IsReadOnlyInMobileClient>0</IsReadOnlyInMobileClient>
+      <IsQuickCreateEnabled>1</IsQuickCreateEnabled>
+      <SchemaName>cr2a0_debtaccount</SchemaName>
+      <IsActivity>0</IsActivity>
+      <IsActivityParty>0</IsActivityParty>
+      <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>
+      <IsConnectionsEnabled>0</IsConnectionsEnabled>
+      <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
+      <IsKnowledgeManagementEnabled>0</IsKnowledgeManagementEnabled>
+      <IsMailMergeEnabled>0</IsMailMergeEnabled>
+      <IsMappable>1</IsMappable>
+      <IsReadingPaneEnabled>0</IsReadingPaneEnabled>
+      <IsRequiredOffline>0</IsRequiredOffline>
+      <IsSLAEnabled>0</IsSLAEnabled>
+      <IsStateModelEnabled>0</IsStateModelEnabled>
+      <IsWorkflowEnabled>1</IsWorkflowEnabled>
+    </entity>
+  </EntityInfo>
+</Entity> 

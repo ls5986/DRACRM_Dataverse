@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name LocalizedName="Debt Account" OriginalName="Debt Account">cr2a0_debtaccount</Name>
+  <EntityInfo>
+    <entity Name="cr2a0_debtaccount">
+      <attributes>
+        <attribute PhysicalName="cr2a0_debtaccountid">
+          <Type>primarykey</Type>
+          <Name>cr2a0_debtaccountid</Name>
+          <LogicalName>cr2a0_debtaccountid</LogicalName>
+          <RequiredLevel>systemrequired</RequiredLevel>
+          <DisplayName>Debt Account</DisplayName>
+          <IsCustomField>true</IsCustomField>
+        </attribute>
+        <attribute PhysicalName="cr2a0_accountnumber">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_accountnumber</Name>
+          <LogicalName>cr2a0_accountnumber</LogicalName>
+          <RequiredLevel>required</RequiredLevel>
+          <DisplayName>Account Number</DisplayName>
+          <MaxLength>50</MaxLength>
+          <IsCustomField>true</IsCustomField>
+        </attribute>
+        <attribute PhysicalName="cr2a0_balance">
+          <Type>money</Type>
+          <Name>cr2a0_balance</Name>
+          <LogicalName>cr2a0_balance</LogicalName>
+          <RequiredLevel>required</RequiredLevel>
+          <DisplayName>Balance</DisplayName>
+          <IsCustomField>true</IsCustomField>
+        </attribute>
+      </attributes>
+    </entity>
+  </EntityInfo>
+</Entity>

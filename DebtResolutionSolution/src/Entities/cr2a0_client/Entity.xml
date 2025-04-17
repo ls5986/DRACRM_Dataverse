@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name LocalizedName="Client" OriginalName="Client">cr2a0_client</Name>
+  <EntityInfo>
+    <entity Name="cr2a0_client">
+      <attributes>
+        <attribute PhysicalName="cr2a0_clientid">
+          <Type>primarykey</Type>
+          <Name>cr2a0_clientid</Name>
+          <LogicalName>cr2a0_clientid</LogicalName>
+          <RequiredLevel>systemrequired</RequiredLevel>
+          <DisplayName>Client</DisplayName>
+          <IsCustomField>true</IsCustomField>
+        </attribute>
+        <attribute PhysicalName="cr2a0_name">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_name</Name>
+          <LogicalName>cr2a0_name</LogicalName>
+          <RequiredLevel>required</RequiredLevel>
+          <DisplayName>Name</DisplayName>
+          <MaxLength>100</MaxLength>
+          <IsCustomField>true</IsCustomField>
+        </attribute>
+      </attributes>
+    </entity>
+  </EntityInfo>
+</Entity>

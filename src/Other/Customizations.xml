@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities>
+    <Entity>
+      <Name>cr2a0_client</Name>
+      <EntityInfo>
+        <entity Name="cr2a0_client">
+          <LocalizedNames>
+            <LocalizedName description="Client" languagecode="1033" />
+          </LocalizedNames>
+          <attributes>
+            <attribute PhysicalName="cr2a0_phone">
+              <Type>nvarchar</Type>
+              <Name>cr2a0_phone</Name>
+              <LogicalName>cr2a0_phone</LogicalName>
+              <RequiredLevel>None</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <MaxLength>20</MaxLength>
+              <Format>text</Format>
+            </attribute>
+            <attribute PhysicalName="cr2a0_email">
+              <Type>nvarchar</Type>
+              <Name>cr2a0_email</Name>
+              <LogicalName>cr2a0_email</LogicalName>
+              <RequiredLevel>None</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <MaxLength>100</MaxLength>
+              <Format>email</Format>
+            </attribute>
+          </attributes>
+        </entity>
+      </EntityInfo>
+    </Entity>
+    <Entity>
+      <Name>cr2a0_debtaccount</Name>
+      <EntityInfo>
+        <entity Name="cr2a0_debtaccount">
+          <LocalizedNames>
+            <LocalizedName description="Debt Account" languagecode="1033" />
+          </LocalizedNames>
+          <attributes>
+            <attribute PhysicalName="cr2a0_accountnumber">
+              <Type>nvarchar</Type>
+              <Name>cr2a0_accountnumber</Name>
+              <LogicalName>cr2a0_accountnumber</LogicalName>
+              <RequiredLevel>None</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <MaxLength>30</MaxLength>
+              <Format>text</Format>
+            </attribute>
+            <attribute PhysicalName="cr2a0_interestrate">
+              <Type>decimal</Type>
+              <Name>cr2a0_interestrate</Name>
+              <LogicalName>cr2a0_interestrate</LogicalName>
+              <RequiredLevel>None</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <MaxValue>100</MaxValue>
+              <MinValue>0</MinValue>
+              <Precision>2</Precision>
+              <Format>decimal</Format>
+            </attribute>
+          </attributes>
+        </entity>
+      </EntityInfo>
+    </Entity>
+  </Entities>
+  <EntityRelationships>
+    <EntityRelationship SchemaName="cr2a0_client_debtaccount">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>cr2a0_debtaccount</ReferencingEntityName>
+      <ReferencedEntityName>cr2a0_client</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>cr2a0_clientid</ReferencingAttributeName>
+    </EntityRelationship>
+  </EntityRelationships>
+  <Roles></Roles>
+  <Workflows></Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates></Templates>
+  <EntityMaps></EntityMaps>
+  <OrganizationSettings></OrganizationSettings>
+  <optionsets></optionsets>
+  <CustomControls></CustomControls>
+  <EntityDataProviders></EntityDataProviders>
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml> 

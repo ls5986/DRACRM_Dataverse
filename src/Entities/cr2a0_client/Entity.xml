@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name LocalizedName="Client" OriginalName="Client">cr2a0_client</Name>
+  <EntityInfo>
+    <entity Name="cr2a0_client">
+      <LocalizedNames>
+        <LocalizedName description="Client" languagecode="1033" />
+      </LocalizedNames>
+      <LocalizedCollectionNames>
+        <LocalizedCollectionName description="Clients" languagecode="1033" />
+      </LocalizedCollectionNames>
+      <Descriptions>
+        <Description description="Records of clients and their information" languagecode="1033" />
+      </Descriptions>
+      <PrimaryNameAttribute>cr2a0_name</PrimaryNameAttribute>
+      <attributes>
+        <attribute PhysicalName="cr2a0_clientid">
+          <Type>primarykey</Type>
+          <Name>cr2a0_clientid</Name>
+          <LogicalName>cr2a0_clientid</LogicalName>
+          <RequiredLevel>SystemRequired</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsPrimaryId>1</IsPrimaryId>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Client ID" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Unique identifier for entity instances" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_name">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_name</Name>
+          <LogicalName>cr2a0_name</LogicalName>
+          <RequiredLevel>ApplicationRequired</RequiredLevel>
+          <MaxLength>100</MaxLength>
+          <Format>text</Format>
+          <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsPrimaryName>1</IsPrimaryName>
+          <LocalizedNames>
+            <LocalizedName description="Name" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Name of the client" languagecode="1033" />
+          </Descriptions>
+          <displaynames>
+            <displayname description="Name" languagecode="1033" />
+          </displaynames>
+        </attribute>
+        <attribute PhysicalName="cr2a0_firstname">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_firstname</Name>
+          <LogicalName>cr2a0_firstname</LogicalName>
+          <RequiredLevel>ApplicationRequired</RequiredLevel>
+          <MaxLength>50</MaxLength>
+          <Format>text</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="First Name" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="First name of the client" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_lastname">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_lastname</Name>
+          <LogicalName>cr2a0_lastname</LogicalName>
+          <RequiredLevel>ApplicationRequired</RequiredLevel>
+          <MaxLength>50</MaxLength>
+          <Format>text</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Last Name" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Last name of the client" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_email">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_email</Name>
+          <LogicalName>cr2a0_email</LogicalName>
+          <RequiredLevel>None</RequiredLevel>
+          <MaxLength>100</MaxLength>
+          <Format>email</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Email" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Email address of the client" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_phone">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_phone</Name>
+          <LogicalName>cr2a0_phone</LogicalName>
+          <RequiredLevel>None</RequiredLevel>
+          <MaxLength>20</MaxLength>
+          <Format>phone</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Phone" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Phone number of the client" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_address">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_address</Name>
+          <LogicalName>cr2a0_address</LogicalName>
+          <RequiredLevel>None</RequiredLevel>
+          <MaxLength>200</MaxLength>
+          <Format>text</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Address" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Address of the client" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_dateofbirth">
+          <Type>datetime</Type>
+          <Name>cr2a0_dateofbirth</Name>
+          <LogicalName>cr2a0_dateofbirth</LogicalName>
+          <RequiredLevel>None</RequiredLevel>
+          <Format>dateonly</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="Date of Birth" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Date of birth of the client" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="cr2a0_ssn">
+          <Type>nvarchar</Type>
+          <Name>cr2a0_ssn</Name>
+          <LogicalName>cr2a0_ssn</LogicalName>
+          <RequiredLevel>None</RequiredLevel>
+          <MaxLength>11</MaxLength>
+          <Format>text</Format>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <LocalizedNames>
+            <LocalizedName description="SSN" languagecode="1033" />
+          </LocalizedNames>
+          <Descriptions>
+            <Description description="Social Security Number of the client" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+      </attributes>
+      <EntitySetName>cr2a0_clients</EntitySetName>
+      <IsDuplicateCheckEnabled>0</IsDuplicateCheckEnabled>
+      <IsOfflineInMobileClient>1</IsOfflineInMobileClient>
+      <IsValidForQueue>0</IsValidForQueue>
+      <OwnershipType>UserOwned</OwnershipType>
+      <IsAvailableOffline>1</IsAvailableOffline>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <IsVisibleInMobile>1</IsVisibleInMobile>
+      <IsVisibleInMobileClient>1</IsVisibleInMobileClient>
+      <IsReadOnlyInMobileClient>0</IsReadOnlyInMobileClient>
+      <IsQuickCreateEnabled>1</IsQuickCreateEnabled>
+      <SchemaName>cr2a0_client</SchemaName>
+      <IsActivity>0</IsActivity>
+      <IsActivityParty>0</IsActivityParty>
+      <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>
+      <IsConnectionsEnabled>0</IsConnectionsEnabled>
+      <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
+      <IsKnowledgeManagementEnabled>0</IsKnowledgeManagementEnabled>
+      <IsMailMergeEnabled>0</IsMailMergeEnabled>
+      <IsMappable>1</IsMappable>
+      <IsReadingPaneEnabled>0</IsReadingPaneEnabled>
+      <IsRequiredOffline>0</IsRequiredOffline>
+      <IsSLAEnabled>0</IsSLAEnabled>
+      <IsStateModelEnabled>0</IsStateModelEnabled>
+      <IsWorkflowEnabled>1</IsWorkflowEnabled>
+    </entity>
+  </EntityInfo>
+</Entity> 

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities>
+    <!-- Sample Client -->
+    <Entity>
+      <Name>dra_client</Name>
+      <Records>
+        <Record>
+          <dra_firstname>John</dra_firstname>
+          <dra_lastname>Doe</dra_lastname>
+          <dra_email>john.doe@example.com</dra_email>
+          <dra_phone>555-0101</dra_phone>
+          <statuscode>1</statuscode>
+        </Record>
+      </Records>
+    </Entity>
+
+    <!-- Sample Debt Account -->
+    <Entity>
+      <Name>dra_debtaccount</Name>
+      <Records>
+        <Record>
+          <dra_accountnumber>ACC001</dra_accountnumber>
+          <dra_originalbalance>15000.00</dra_originalbalance>
+          <dra_balance>12000.00</dra_balance>
+          <dra_creditor>Credit Card Co</dra_creditor>
+          <dra_accounttype>100000000</dra_accounttype>
+          <statuscode>1</statuscode>
+          <dra_interestrate>18.99</dra_interestrate>
+        </Record>
+      </Records>
+    </Entity>
+
+    <!-- Sample Client Note -->
+    <Entity>
+      <Name>dra_clientnote</Name>
+      <Records>
+        <Record>
+          <dra_subject>Initial Contact</dra_subject>
+          <dra_note>Client interested in debt settlement program</dra_note>
+          <dra_type>100000000</dra_type>
+        </Record>
+      </Records>
+    </Entity>
+
+    <!-- Sample Sales Team -->
+    <Entity>
+      <Name>dra_salesteam</Name>
+      <Records>
+        <Record>
+          <dra_name>West Coast Team</dra_name>
+          <statuscode>1</statuscode>
+        </Record>
+      </Records>
+    </Entity>
+
+    <!-- Sample Sales Rep -->
+    <Entity>
+      <Name>dra_salesrep</Name>
+      <Records>
+        <Record>
+          <dra_firstname>Jane</dra_firstname>
+          <dra_lastname>Smith</dra_lastname>
+          <dra_email>jane.smith@example.com</dra_email>
+          <dra_phone>555-0102</dra_phone>
+          <statuscode>1</statuscode>
+        </Record>
+      </Records>
+    </Entity>
+
+    <!-- Sample Deal -->
+    <Entity>
+      <Name>dra_deal</Name>
+      <Records>
+        <Record>
+          <dra_offeramount>7200.00</dra_offeramount>
+          <statuscode>100000000</statuscode>
+          <dra_terms>12 months</dra_terms>
+          <dra_type>100000000</dra_type>
+        </Record>
+      </Records>
+    </Entity>
+
+    <!-- Sample Credit Pull -->
+    <Entity>
+      <Name>dra_creditpull</Name>
+      <Records>
+        <Record>
+          <dra_score>650</dra_score>
+          <dra_provider>100000000</dra_provider>
+        </Record>
+      </Records>
+    </Entity>
+
+    <!-- Sample Commission Tier -->
+    <Entity>
+      <Name>dra_commissiontier</Name>
+      <Records>
+        <Record>
+          <dra_name>Standard Tier</dra_name>
+          <dra_minimumamount>5000.00</dra_minimumamount>
+          <dra_maximumamount>10000.00</dra_maximumamount>
+          <dra_commissionrate>10.00</dra_commissionrate>
+          <statuscode>1</statuscode>
+        </Record>
+      </Records>
+    </Entity>
+
+    <!-- Sample Commission Payout -->
+    <Entity>
+      <Name>dra_commissionpayout</Name>
+      <Records>
+        <Record>
+          <dra_amount>720.00</dra_amount>
+          <statuscode>1</statuscode>
+        </Record>
+      </Records>
+    </Entity>
+
+    <!-- Sample Sales Target -->
+    <Entity>
+      <Name>dra_salestarget</Name>
+      <Records>
+        <Record>
+          <dra_name>Q2 2024 Target</dra_name>
+          <dra_targetamount>100000.00</dra_targetamount>
+          <dra_startdate>2024-04-01</dra_startdate>
+          <dra_enddate>2024-06-30</dra_enddate>
+          <statuscode>1</statuscode>
+        </Record>
+      </Records>
+    </Entity>
+
+    <!-- Sample Routing Rule -->
+    <Entity>
+      <Name>dra_routingrules</Name>
+      <Records>
+        <Record>
+          <dra_name>West Coast Rule</dra_name>
+          <dra_region>West</dra_region>
+          <statuscode>1</statuscode>
+        </Record>
+      </Records>
+    </Entity>
+
+    <!-- Sample Notification -->
+    <Entity>
+      <Name>dra_notification</Name>
+      <Records>
+        <Record>
+          <dra_subject>New Deal Created</dra_subject>
+          <dra_message>A new deal has been created for client John Doe</dra_message>
+          <dra_type>100000000</dra_type>
+          <statuscode>1</statuscode>
+        </Record>
+      </Records>
+    </Entity>
+  </Entities>
+</ImportExportXml> 

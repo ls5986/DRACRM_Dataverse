@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationship xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationshipType>OneToMany</EntityRelationshipType>
+  <IsCustomizable>1</IsCustomizable>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsHierarchical>0</IsHierarchical>
+  <ReferencingEntityName>cr2a0_debtaccount</ReferencingEntityName>
+  <ReferencedEntityName>cr2a0_client</ReferencedEntityName>
+  <CascadeAssign>NoCascade</CascadeAssign>
+  <CascadeDelete>RemoveLink</CascadeDelete>
+  <CascadeReparent>NoCascade</CascadeReparent>
+  <CascadeShare>NoCascade</CascadeShare>
+  <CascadeUnshare>NoCascade</CascadeUnshare>
+  <ReferencingAttributeName>cr2a0_clientid</ReferencingAttributeName>
+  <ReferencingDisplayName>Client</ReferencingDisplayName>
+  <ReferencedDisplayName>Debt Accounts</ReferencedDisplayName>
+  <RelationshipDescription>
+    <Descriptions>
+      <Description description="Client associated with this debt account" languagecode="1033" />
+    </Descriptions>
+  </RelationshipDescription>
+  <SchemaName>cr2a0_client_debtaccount</SchemaName>
+  <SecurityTypes>
+    <SecurityType>Append</SecurityType>
+    <SecurityType>Parent</SecurityType>
+  </SecurityTypes>
+</EntityRelationship>

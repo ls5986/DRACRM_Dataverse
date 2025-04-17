@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationship xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationshipInfo>
+    <entityrelationship Name="cr2a0_client_debtaccount">
+      <LocalizedNames>
+        <LocalizedName description="Client Debt Accounts" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description description="Relationship between Client and their Debt Accounts" languagecode="1033" />
+      </Descriptions>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomRelationship>1</IsCustomRelationship>
+      <IsHierarchical>0</IsHierarchical>
+      <IsManaged>1</IsManaged>
+      <IsValidForAdvancedFind>1</IsValidForAdvancedFind>
+      <ReferencedEntity>cr2a0_client</ReferencedEntity>
+      <ReferencingEntity>cr2a0_debtaccount</ReferencingEntity>
+      <ReferencingAttributeName>cr2a0_clientid</ReferencingAttributeName>
+      <RelationshipType>OneToMany</RelationshipType>
+      <SchemaName>cr2a0_client_debtaccount</SchemaName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>RemoveLink</CascadeDelete>
+      <CascadeMerge>NoCascade</CascadeMerge>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    </entityrelationship>
+  </EntityRelationshipInfo>
+</EntityRelationship> 
