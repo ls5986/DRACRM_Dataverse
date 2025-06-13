@@ -43,6 +43,11 @@ yarn-error.log*
 .env.local
 .env.*.local
 
+# Supabase
+**/supabase/.temp
+**/supabase/.branches
+**/supabase/.temp
+
 # Scripts with sensitive information
 dra-web-app/scripts/create_sample_data.sh
 dra-web-app/scripts/extract-metadata.js
@@ -53,3 +58,7 @@ test_dataverse.py
 *.py
 *.ps1
 *.sh
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
